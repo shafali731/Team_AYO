@@ -1,8 +1,8 @@
 public interface Deque<Card>{
-  public <Card> addFirst();
+  public void addFirst(Card x);
   public <Card> removeFirst();
   public <Card> getFirst();
-  public <Card> addLast();
-  public <Card> removeLast();
+  public void addLast(Card x);
+  public <Card>  removeLast();
   public <Card> getLast();
 }
