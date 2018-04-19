@@ -20,10 +20,10 @@ since it has many similar methods. However adding to the front would be a linear
 5. Update the README.md for changes
 
 ### To Do List:
-- [] update README with team information
-- [] Consult the Java API for queue and deque
-- [] Plan what methods to include
-- [] implement methods in QQKachoo
-- [] Create Driver file
-- [] test methods and add comments
-- [] update the README
+- [ ] update README with team information
+- [ ] Consult the Java API for queue and deque
+- [ ] Plan what methods to include
+- [ ] implement methods in QQKachoo
+- [ ] Create Driver file
+- [ ] test methods and add comments
+- [ ] update the README
