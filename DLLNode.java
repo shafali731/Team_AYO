@@ -4,14 +4,14 @@
  * Stores a String as cargo.
  *****************************************************/
 
-public class DLLNode
+public class DLLNode<T>
 {
-  private String _cargo;    //cargo may only be of type String
+  private T _cargo;    //cargo may only be of type String
   private DLLNode _nextNode, _prevNode; //pointers to next, prev DLLNodes
 
 
   // constructor -- initializes instance vars
-  public DLLNode( String value, DLLNode prev, DLLNode next )
+  public DLLNode( T value, DLLNode prev, DLLNode next )
   {
     _cargo = value;
     _nextNode = next;
@@ -20,7 +20,7 @@ public class DLLNode
 
 
   //--------------v  ACCESSORS  v--------------
-  public String getCargo() { return _cargo; }
+  public T getCargo() { return _cargo; }
 
   public DLLNode getNext() { return _nextNode; }
 
@@ -29,9 +29,9 @@ public class DLLNode
 
 
   //--------------v  MUTATORS  v--------------
-  public String setCargo( String newCargo )
+  public T setCargo( T newCargo )
   {
-    String foo = getCargo();
+    T foo = getCargo();
     _cargo = newCargo;
     return foo;
   }
