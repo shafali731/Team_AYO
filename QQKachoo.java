@@ -1,12 +1,12 @@
-//Team AYO 
+//Team AYO
 //APCS2 pd01
 //Lab 02
 //2018-04-19
 public class QQKachoo<Card> implements Deque<Card>{
     DLLNode<Card> first;
     DLLNode<Card> last;
-  
-    public void addFirst(Card x) 
+
+    public void addFirst(Card x)
     {
 	DLLNode<Card> temp = new DLLNode(x, null, null);
 	if ((first == null) && (last == null)) {
@@ -18,7 +18,7 @@ public class QQKachoo<Card> implements Deque<Card>{
 	    first = temp;
 	}
     }
-    
+
     public Card getFirst()
     {
     return first.getCargo();
@@ -42,7 +42,7 @@ public class QQKachoo<Card> implements Deque<Card>{
         temp.setPrev(first);
         last.setNext(temp);
         last = temp;
-    }    
+    }
     }
 
     public Card getLast()
@@ -55,7 +55,7 @@ public class QQKachoo<Card> implements Deque<Card>{
     Card retVal = last.getCargo();
     last = last.getPrev();
     last.setNext(null);
-    return retVal;    
+    return retVal;
     }
 
     public static void main(String[] args)
@@ -63,7 +63,7 @@ public class QQKachoo<Card> implements Deque<Card>{
     Deque<Integer> deck = new QQKachoo<Integer>();
     deck.addFirst(4);
     deck.addFirst(2);
-    deck.addFirst(6);            
+    deck.addFirst(6);
     deck.addFirst(3);
     deck.addFirst(5);
     deck.addFirst(1);
@@ -74,6 +74,6 @@ public class QQKachoo<Card> implements Deque<Card>{
     deck.removeLast();
     System.out.println(deck.getLast()); // 2
     deck.addLast(7);
-    System.out.println(deck.getLast()); // 7  
+    System.out.println(deck.getLast()); // 7
     }
 }
